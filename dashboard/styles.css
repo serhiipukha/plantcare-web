@@ -1,0 +1,139 @@
+/* Variables */
+:root {
+  --color-bg: #f4f7f5;
+  --color-sidebar: #dfe6d9;
+  --color-primary: #2b7a4b;
+  --color-secondary: #47a25b;
+  --color-text: #333;
+  --color-task-bg: #e8f2eb;
+  --font-family: "Arial", sans-serif;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  display: flex;
+  height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: var(--color-sidebar);
+  width: 250px;
+  padding: 20px;
+}
+
+.sidebar__logo {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.sidebar__logo span {
+  color: var(--color-secondary);
+}
+
+.sidebar__menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.sidebar__item {
+  padding: 10px;
+  color: var(--color-text);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.sidebar__item.active,
+.sidebar__item:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.header h1 {
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.header p {
+  color: var(--color-text);
+  margin-top: 5px;
+}
+
+/* Cards */
+.cards__section {
+  margin-top: 20px;
+}
+
+.cards__title {
+  margin: 10px 0;
+  color: var(--color-primary);
+}
+
+.card {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.card__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.card__content {
+  flex: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.card__location {
+  margin: 5px 0;
+  color: gray;
+}
+
+.card__tags {
+  display: flex;
+  gap: 5px;
+}
+
+.tag {
+  background-color: var(--color-task-bg);
+  color: var(--color-primary);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.card__tasks {
+  color: var(--color-secondary);
+  font-size: 0.9rem;
+}
