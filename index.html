@@ -4,8 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlantCare</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <a href="index.html">PlantCare</a>
+          </div>
+
+          <nav class="nav">
+            <div class="nav__header">
+              <div class="logo">
+                <a href="index.html">PlantCare</a>
+              </div>
+
+              <button class="mobile__menu__trigger">
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m47.334 5.367-4.7-4.7L24 19.3 5.367.667l-4.7 4.7L19.3 24 .667 42.633l4.7 4.7L24 28.7l18.634 18.633 4.7-4.7L28.7 24 47.334 5.367Z"
+                    fill="#224722"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <ul class="nav__menu">
+              <li class="nav__menu__item">
+                <a href="admin.html" class="nav__menu__link">Správa květin</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="news.html" class="nav__menu__link">Novinky</a>
+              </li>
+              <li class="nav__menu__item">
+                <a
+                  href="login.html"
+                  class="nav__menu__link nav__menu__link--login"
+                >
+                  Přihlásit se
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="mobile__menu__trigger">
+            <svg
+              width="22"
+              height="13"
+              viewBox="0 0 22 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.54395 1.76001H20.4585"
+                stroke="#224722"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M1.54395 6.85254H20.4585"
+                stroke="#224722"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M1.54395 11.9448H20.4585"
+                stroke="#224722"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <footer></footer>
+  </body>
 </html>
