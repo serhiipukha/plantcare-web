@@ -5,25 +5,27 @@
 		<meta charset="UTF-8" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./scene.css" />
 		<link rel="stylesheet" href="./top.css" />
 		<script src="./top.js"></script>
+        <script src="./scene.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
 
 	<body class="bg-[#ebfcda]">
-		<header class="fixed left-0 top-0 z-20 w-full px-4  ">
+		<header class="fixed left-0 top-0 z-20 w-full px-4">
 			<div
 				class="container mx-auto mt-5 flex max-w-base items-center justify-between rounded-full bg-white px-7 py-3 shadow-xl lg:py-4"
 			>
 				<a href="https://saburov.xyz">
-					<h1 class="w-[80px] text-gray-800 lg:w-[108px]">
+					<h1 class="w-[80px] text-[#234823] lg:w-[108px]">
 						PlantCare
 					</h1>
 				</a>
 				<div class="hidden items-center gap-4 lg:flex">
-					<a href="https://saburov.xyz" class="text-gray-700"
+					<a href="https://saburov.xyz" class="text-[#234823]"
 						>My account</a
 					>
 					<button
@@ -54,7 +56,7 @@
 						Plant Care features
 					</p>
 					<h4
-						class="mx-auto max-w-3xl text-balance text-center text-4xl font-medium text-primary-foreground md:text-5xl lg:text-7xl"
+						class="mx-auto max-w-3xl text-balance text-center text-4xl font-medium text-[#234823] md:text-5xl lg:text-7xl"
 					>
 						Green tools for green friends
 					</h4>
@@ -168,10 +170,7 @@
 						>
 							<div class="m-4 flex items-center justify-center">
 								<picture>
-									<source
-										srcset="3.avif"
-										type="image/avif"
-									/>
+									<source srcset="3.avif" type="image/avif" />
 									<img
 										class="h-full w-full object-contain"
 										width="800"
@@ -204,10 +203,7 @@
 						>
 							<div class="m-4 flex items-center justify-center">
 								<picture>
-									<source
-										srcset="1.avif"
-										type="image/avif"
-									/>
+									<source srcset="1.avif" type="image/avif" />
 									<img
 										src="./Plant care app - Keep your plants alive _ Plant Care_files/community.KG1B4Z-0.png"
 										class="h-full w-full object-contain"
@@ -237,10 +233,7 @@
 						>
 							<div class="m-4 flex items-center justify-center">
 								<picture>
-									<source
-										srcset="2.avif"
-										type="image/avif"
-									/> 
+									<source srcset="2.avif" type="image/avif" />
 									<img
 										src="./Plant care app - Keep your plants alive _ Plant Care_files/care_share.D_pj1Yrq.png"
 										class="h-full w-full object-contain"
@@ -331,6 +324,19 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="scene">
+			<div id="plant" class="item"></div>
+			<div id="mirror">
+				<div id="mirror-content"></div>
+			</div>
+			<div id="plant-2" class="item"></div>
+			<div id="books" class="item">
+				<div id="apple" class="item"></div>
+			</div>
+			<div id="plant-3" class="item"></div>
+			<div id="clock" class="item"></div>
 		</div>
 
 		<footer class="w-full py-5 px-3 bg-[#212722]">
