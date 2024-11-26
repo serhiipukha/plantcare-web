@@ -1,13 +1,8 @@
-const images = [
-	'1.avif',
-	'2.avif'
-];
+const images = ["44.jpg", "33.jpg", "55.jpg"];
+let currentImageIndex = 0;
+const mirrorContent = document.getElementById("mirror-content");
 
-$(document).ready(function () {
-	let current = 0;
-	$("#mirror-content").on("click", function () {
-		$(this).css({
-			"background-image": `url(${images[++current % images.length]})`,
-		});
-	});
+mirrorContent.addEventListener("click", () => {
+	currentImageIndex = (currentImageIndex + 1) % images.length;
+	mirrorContent.style.backgroundImage = `url(${images[currentImageIndex]})`;
 });
