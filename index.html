@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./top.css" />
+		<script src="./top.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+
+	<body class="bg-[#ebfcda]">
+		<header class="fixed left-0 top-0 z-20 w-full px-4  ">
+			<div
+				class="container mx-auto mt-5 flex max-w-base items-center justify-between rounded-full bg-white px-7 py-3 shadow-xl lg:py-4"
+			>
+				<a href="https://saburov.xyz">
+					<h1 class="w-[80px] text-gray-800 lg:w-[108px]">
+						PlantCare
+					</h1>
+				</a>
+				<div class="hidden items-center gap-4 lg:flex">
+					<a href="https://saburov.xyz" class="text-gray-700"
+						>My account</a
+					>
+					<button
+						class="rounded-full font-medium inline-flex items-center justify-center whitespace-nowrap transition-colors hover:cursor disabled:pointer-events-none disabled:opacity-50 text-white bg-[#234823] px-4 py-3"
+					>
+						Logout
+					</button>
+				</div>
+				<button
+					id="mobile_menu_trigger"
+					aria-label="Open menu"
+					class="block lg:hidden text-2xl"
+				>
+					≡
+				</button>
+			</div>
+		</header>
+		<div class="wrap h-96"></div>
+
+		<div
+			class="container mx-auto my-4 flex max-w-base flex-col gap-8 sm:mx-auto md:my-8"
+		>
+			<div class="mx-4 rounded-xl bg-white">
+				<div class="flex flex-col gap-4 pb-4 pt-16 lg:pb-0">
+					<p
+						class="text-center text-base font-normal uppercase text-primary-foreground text-opacity-50 lg:text-xl"
+					>
+						Plant Care features
+					</p>
+					<h4
+						class="mx-auto max-w-3xl text-balance text-center text-4xl font-medium text-primary-foreground md:text-5xl lg:text-7xl"
+					>
+						Green tools for green friends
+					</h4>
+				</div>
+				<div class="flex flex-col gap-8 p-4 lg:gap-4 lg:p-16">
+					<div
+						class="grid auto-rows-min gap-8 lg:gap-4 lg:grid-cols-[0.7fr_1fr]"
+					>
+						<div
+							class="grid rounded-lg lg:grid-rows-[400px_1fr] bg-[#ebfcda]"
+						>
+							<div
+								class="m-4 px-10 flex items-center justify-center"
+							>
+								<picture>
+									<source
+										srcset="./22.jpg"
+										type="image/avif"
+									/>
+									<img
+										class="h-full w-full object-contain rounded-2xl"
+									/>
+								</picture>
+							</div>
+							<div class="flex flex-col gap-2 p-6 text-[#84341a]">
+								<h4
+									class="text-balance text-xl font-medium md:text-2xl text-primary-foreground"
+								>
+									Smart Watering Reminders
+								</h4>
+								<p
+									class="max-w-xl text-base text-primary-foreground"
+								>
+									Plant Care uses over 50 data factors, plus
+									local climate and weather information, to
+									determine the optimal time to water your
+									plants and sends you a notification.
+								</p>
+							</div>
+						</div>
+						<div
+							class="grid rounded-lg md:grid-rows-[300px_1fr] lg:grid-rows-[400px_1fr] bg-[#234823]"
+						>
+							<div
+								class="m-4 px-6 flex items-center justify-center"
+							>
+								<picture>
+									<source
+										srcset="./1.avif"
+										type="image/avif"
+									/>
+									<img
+										class="h-full w-full md:pt-24 rounded-2xl"
+									/>
+								</picture>
+							</div>
+							<div class="flex flex-col gap-2 p-6 md:mt-14">
+								<h4
+									class="text-balance text-[#ebfcda] text-xl font-bold md:text-2xl"
+								>
+									... and reminders for fertilizing and more
+								</h4>
+								<p class="max-w-xl text-base text-[#ebfcda]">
+									Plant Cares smart algorithms will also send
+									you notifications when it's time to
+									fertilize, mist, repot, or clean your
+									plants, ensuring they receive optimal care.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="grid auto-rows-min gap-8 lg:gap-4 lg:grid-cols-[1fr_0.7fr]"
+					>
+						<div
+							class="scroll-fade grid rounded-lg md:grid-rows-[300px_1fr] lg:grid-rows-[400px_1fr] bg-[#8d9783] text-[#ebfcda]"
+						>
+							<div
+								class="m-4 px-10 flex items-center justify-center"
+							>
+								<picture>
+									<source
+										srcset="./2.avif"
+										type="image/avif"
+									/>
+									<img
+										class="h-full w-full object-contain"
+										width="800"
+										height="523"
+									/>
+								</picture>
+							</div>
+							<div class="flex flex-col gap-2 p-6">
+								<h4
+									class="text-balance text-xl font-medium md:text-2xl text-unselected-foreground"
+								>
+									Dr Plant Care: Cure sick plants
+								</h4>
+								<p
+									class="max-w-xl text-base text-unselected-foreground"
+								>
+									Plants not feeling well? Yellow leaves,
+									mysterious bugs, weak growth? Dr. Plant Care
+									will diagnose your plant and set up a
+									treatment plan to save your loved one.
+								</p>
+							</div>
+						</div>
+						<div
+							class="scroll-fade grid rounded-lg md:grid-rows-[300px_1fr] lg:grid-rows-[400px_1fr] bg-[#d6e3c8]"
+						>
+							<div class="m-4 flex items-center justify-center">
+								<picture>
+									<source
+										srcset="3.avif"
+										type="image/avif"
+									/>
+									<img
+										class="h-full w-full object-contain"
+										width="800"
+										height="473"
+									/>
+								</picture>
+							</div>
+							<div class="flex flex-col gap-2 p-6">
+								<h4
+									class="text-balance text-xl font-medium md:text-2xl text-primary-foreground"
+								>
+									Plant Identification
+								</h4>
+								<p
+									class="max-w-xl text-base text-primary-foreground"
+								>
+									If you aren’t sure what plant you have, just
+									take a picture of it and Plant Care will
+									instantly let you know what it is and what
+									it needs.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="grid auto-rows-min gap-8 lg:gap-4 lg:grid-cols-[0.7fr_1fr]"
+					>
+						<div
+							class="scroll-fade grid rounded-lg md:grid-rows-[300px_1fr] lg:grid-rows-[400px_1fr] bg-[#f7fef0]"
+						>
+							<div class="m-4 flex items-center justify-center">
+								<picture>
+									<source
+										srcset="1.avif"
+										type="image/avif"
+									/>
+									<img
+										src="./Plant care app - Keep your plants alive _ Plant Care_files/community.KG1B4Z-0.png"
+										class="h-full w-full object-contain"
+										width="800"
+										height="585"
+									/>
+								</picture>
+							</div>
+							<div class="flex flex-col gap-2 p-6">
+								<h4
+									class="text-balance text-xl font-medium md:text-2xl text-unselected-foreground"
+								>
+									Join a plant community
+								</h4>
+								<p
+									class="max-w-xl text-base text-unselected-foreground"
+								>
+									Engage in discussions with fellow plant
+									enthusiasts, share plant care experiences,
+									seek advice, and celebrate successes with a
+									supportive community of green thumbs!
+								</p>
+							</div>
+						</div>
+						<div
+							class="scroll-fade grid rounded-lg md:grid-rows-[300px_1fr] lg:grid-rows-[400px_1fr] bg-[#808080]"
+						>
+							<div class="m-4 flex items-center justify-center">
+								<picture>
+									<source
+										srcset="2.avif"
+										type="image/avif"
+									/> 
+									<img
+										src="./Plant care app - Keep your plants alive _ Plant Care_files/care_share.D_pj1Yrq.png"
+										class="h-full w-full object-contain"
+										width="800"
+										height="638"
+									/>
+								</picture>
+							</div>
+							<div class="flex flex-col gap-2 p-6 text-[#f0c1c3]">
+								<h4
+									class="text-balance text-xl font-medium md:text-2xl text-[#ebfcda]"
+								>
+									Care Share
+								</h4>
+								<p class="max-w-xl text-base text-[#ebfcda]">
+									Share your plant care schedules with friends
+									and family to keep your green buddies
+									thriving. It’s easy to coordinate watering,
+									fertilizing, and other tasks so everyone
+									stays on the same page.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="grid auto-rows-min gap-8 lg:gap-4 lg:grid-cols-[1fr_0.7fr]"
+					>
+						<div
+							class="scroll-fade grid rounded-lg md:grid-rows-[300px_1fr] lg:grid-rows-[400px_1fr] bg-[#4d843a]"
+						>
+							<div class="m-4 flex items-center justify-center">
+								<picture>
+									<source srcset="1.avif" type="image/avif" />
+									<img
+										src="./Plant care app - Keep your plants alive _ Plant Care_files/plant_organization.BT7mzR-p.png"
+										class="h-full w-full object-contain"
+										width="800"
+										height="485"
+									/>
+								</picture>
+							</div>
+							<div class="flex flex-col gap-2 p-6 text-[#ebfcda]">
+								<h4
+									class="text-balance text-xl font-medium md:text-2xl"
+								>
+									Plant organization &amp; journal
+								</h4>
+								<p class="max-w-xl text-base">
+									Keep your garden under control. Plant Care
+									is already helping millions of users
+									collectively care for more than 30 million
+									plants.
+								</p>
+							</div>
+						</div>
+						<div
+							class="scroll-fade grid rounded-lg md:grid-rows-[300px_1fr] lg:grid-rows-[400px_1fr] bg-[#ebfcda]"
+						>
+							<div class="m-4 flex items-center justify-center">
+								<picture>
+									<source srcset="2.avif" type="image/avif" />
+									<img
+										src="./Plant care app - Keep your plants alive _ Plant Care_files/light_meter.Lk0VuQEn.png"
+										class="h-full w-full object-contain"
+										width="800"
+										height="640"
+									/>
+								</picture>
+							</div>
+							<div class="flex flex-col gap-2 p-6 text-[#9d2f7d]">
+								<h4
+									class="text-balance text-xl font-medium md:text-2xl text-unselected-foreground"
+								>
+									Light Meter
+								</h4>
+								<p
+									class="max-w-xl text-base text-unselected-foreground"
+								>
+									Would you like to put a plant in a bathroom
+									without windows? Some plants prefer shade
+									and some are sun-lovers. Get to know which
+									plants are suitable in your home based on
+									the different light conditions of your
+									rooms.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="w-full py-5 px-3 bg-[#212722]">
+			<div
+				class="container mx-auto grid max-w-base px-5 py-14 md:grid-cols-2"
+			>
+				<a href="/" class="mb-10 block text-[#C4DEA9] text-3xl">
+					Plant Care
+				</a>
+				<div
+					class="flex flex-col gap-4 whitespace-nowrap md:flex-row md:gap-16 md:justify-self-end"
+				>
+					<ul class="flex flex-1 flex-col gap-4">
+						<li>
+							<button
+								class="flex w-full items-center justify-between gap-4 text-lg text-[#C4DEA9] sm:justify-normal"
+							>
+								Navigation
+								<span
+									class="block h-3 w-3 fill-highlight-foreground transition-transform md:hidden rotate-180"
+								>
+									<svg
+										viewBox="0 0 68 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M61.4337 39.2334L67.3337 33.3334L34.0003 6.48499e-05L0.666992 33.3334L6.56699 39.2334L34.0003 11.8001L61.4337 39.2334Z"
+											class="fill-current"
+										></path>
+									</svg>
+								</span>
+							</button>
+						</li>
+						<ul class="m-menu-items flex flex-col gap-2">
+							<li>
+								<a
+									href="https://links.getplant Care.com/bLAj"
+									target="__blank"
+									rel="noopener noreferrer"
+									class="text-lg text-[#C4DEA9] text-opacity-50 transition-all hover:text-opacity-100"
+								>
+									Plant Care for iOS
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://links.getplant Care.com/AD44"
+									target="__blank"
+									rel="noopener noreferrer"
+									class="text-lg text-[#C4DEA9] text-opacity-50 transition-all hover:text-opacity-100"
+								>
+									Plant Care for Android
+								</a>
+							</li>
+							<li>
+								<a
+									href="/w/terms-and-conditions"
+									class="text-lg text-[#C4DEA9] text-opacity-50 transition-all hover:text-opacity-100"
+								>
+									Terms and conditions
+								</a>
+							</li>
+							<li>
+								<a
+									href="/w/privacy-policy"
+									class="text-lg text-[#C4DEA9] text-opacity-50 transition-all hover:text-opacity-100"
+								>
+									Privacy policy
+								</a>
+							</li>
+						</ul>
+					</ul>
+					<ul class="flex flex-1 flex-col gap-4">
+						<li>
+							<button
+								class="flex w-full items-center justify-between gap-4 text-lg text-[#C4DEA9] sm:justify-normal"
+							>
+								Contact
+								<span
+									class="block h-3 w-3 fill-highlight-foreground transition-transform md:hidden rotate-180"
+								>
+									<svg
+										viewBox="0 0 68 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M61.4337 39.2334L67.3337 33.3334L34.0003 6.48499e-05L0.666992 33.3334L6.56699 39.2334L34.0003 11.8001L61.4337 39.2334Z"
+											class="fill-current"
+										></path>
+									</svg>
+								</span>
+							</button>
+						</li>
+						<ul class="m-menu-items flex flex-col gap-2">
+							<li>
+								<a
+									href="https://support.getplant Care.com/"
+									target="__blank"
+									rel="noopener noreferrer"
+									class="text-lg text-[#C4DEA9] text-opacity-50 transition-all hover:text-opacity-100"
+								>
+									Help center
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://direct.lc.chat/12188766/"
+									target="__blank"
+									rel="noopener noreferrer"
+									class="text-lg text-[#C4DEA9] text-opacity-50 transition-all hover:text-opacity-100"
+								>
+									Support
+								</a>
+							</li>
+							<li data-="">
+								<a
+									href="/press"
+									class="text-lg text-[#C4DEA9] text-opacity-50 transition-all hover:text-opacity-100"
+								>
+									Press
+								</a>
+							</li>
+						</ul>
+					</ul>
+					<ul class="flex flex-1 flex-col gap-4">
+						<li>
+							<button
+								class="flex w-full items-center justify-between gap-4 text-lg text-[#C4DEA9] sm:justify-normal"
+							>
+								Follow us
+								<span
+									class="block h-3 w-3 fill-highlight-foreground transition-transform md:hidden rotate-180"
+								>
+									<svg
+										viewBox="0 0 68 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M61.4337 39.2334L67.3337 33.3334L34.0003 6.48499e-05L0.666992 33.3334L6.56699 39.2334L34.0003 11.8001L61.4337 39.2334Z"
+											class="fill-current"
+										></path>
+									</svg>
+								</span>
+							</button>
+						</li>
+						<ul class="m-menu-items flex flex-col gap-2" data-="">
+							<li>
+								<a
+									href="https://www.instagram.com/plant Care_app"
+									target="__blank"
+									rel="noopener noreferrer"
+									class="text-lg text-[#C4DEA9] text-opacity-50 transition-all hover:text-opacity-100"
+								>
+									Instagram
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://www.facebook.com/plant Careapp"
+									target="__blank"
+									rel="noopener noreferrer"
+									class="text-lg text-[#C4DEA9] text-opacity-50 transition-all hover:text-opacity-100"
+								>
+									Facebook
+								</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="top.js"></script>
+	</body>
+</html>
