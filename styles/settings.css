@@ -1,0 +1,144 @@
+.settings-section {
+  color: #333;
+  margin: 20px auto;
+  padding: 0 15px;
+  max-width: 800px;
+}
+
+.settings-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.settings-title {
+  font-size: 2rem;
+  color: #2d5a4c;
+}
+
+.settings-content {
+  display: flex;
+  gap: 20px;
+}
+
+.settings-sidebar {
+  flex: 0 0 30%;
+}
+
+.settings-main {
+  flex: 1;
+}
+
+.settings-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.settings-card-header {
+  padding: 15px;
+  background: #f0f8ff;
+  border-bottom: 2px solid #d6f2e6;
+}
+
+.settings-card-title {
+  font-size: 1.2rem;
+  color: #2d5a4c;
+  margin: 0;
+}
+
+.settings-list-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-list-item {
+  padding: 10px 15px;
+  color: #2d5a4c;
+  background: #f9fafb;
+  border: 1px solid #e5e9f2;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.settings-list-item:hover {
+  background: #d6f2e6;
+  color: #236742;
+}
+
+.settings-list-item.active {
+  background: #79b791;
+  color: #fff;
+  border-color: #79b791;
+}
+
+.settings-tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-tab-pane {
+  display: none;
+}
+
+.settings-tab-pane.active {
+  display: block;
+}
+
+.settings-form-group {
+  margin-bottom: 15px;
+}
+
+.settings-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-size: 1rem;
+}
+
+.settings-input:focus {
+  border-color: #2d5a4c;
+  box-shadow: 0 0 5px rgba(45, 90, 76, 0.3);
+  outline: none;
+}
+
+.settings-avatar-wrapper {
+  text-align: center;
+}
+
+.settings-avatar {
+  border-radius: 50%;
+  border: 3px solid var(--clr-primary);
+  padding: 5px;
+  width: 128px;
+  height: 128px;
+  margin-bottom: 10px;
+}
+
+.settings-column + .settings-column {
+  margin-top: 14px;
+}
+
+.settings-btn,
+.settings-avatar-btn {
+  background: var(--clr-primary);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--clr-primary-lt);
+  border-radius: 5rem;
+  padding: 0.75rem 1.5rem;
+  transition: background 0.3s;
+}
+
+.settings-btn:hover,
+.settings-avatar-btn:hover {
+  background: var(--clr-primary-dk);
+}
+
+.settings-avatar-hint {
+  font-size: 0.9rem;
+  color: #555;
+}

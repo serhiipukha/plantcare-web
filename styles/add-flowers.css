@@ -1,0 +1,91 @@
+.add-flower {
+  max-width: 800px;
+  padding: 20px 20px 80px;
+}
+
+.add-flower-header {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 18px;
+}
+
+.add-flower__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+.add-flower__description {
+  font-size: 18px;
+  color: #777;
+}
+
+.add-flower .form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-flower__section__title {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.add-flower select,
+.add-flower input[type="text"],
+.add-flower input[type="number"],
+.add-flower textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-size: 0.9rem;
+}
+
+.add-flower textarea {
+  resize: none;
+  height: 100px;
+}
+
+.add-flower__submit__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.add-flower__submit {
+  display: block;
+  background: var(--clr-primary);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--clr-primary-lt);
+  border-radius: 5rem;
+  padding: 1rem 4rem;
+  transition: background 0.3s;
+}
+
+.add-flower__submit:hover {
+  background: var(--clr-primary-dk);
+}
+
+.add-flower .section-container {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 15px 0;
+}
+
+.add-flower .recommendations {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 15px;
+  display: none;
+}
+
+.add-flower .recommendations h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #2d5a4c;
+}

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlantCare</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <a href="index.html">PlantCare</a>
+          </div>
+
+          <nav class="nav">
+            <div class="nav__header">
+              <div class="logo">
+                <a href="index.html">PlantCare</a>
+              </div>
+
+              <button class="mobile__menu__trigger">
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m47.334 5.367-4.7-4.7L24 19.3 5.367.667l-4.7 4.7L19.3 24 .667 42.633l4.7 4.7L24 28.7l18.634 18.633 4.7-4.7L28.7 24 47.334 5.367Z"
+                    fill="#224722"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <ul class="nav__menu">
+              <li class="nav__menu__item">
+                <a href="admin.html" class="nav__menu__link">Správa květin</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="news.html" class="nav__menu__link">Novinky</a>
+              </li>
+              <li class="nav__menu__item">
+                <a
+                  href="login.html"
+                  class="nav__menu__link nav__menu__link--login"
+                >
+                  Přihlásit se
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="mobile__menu__burger mobile__menu__trigger">
+            <svg
+              width="22"
+              height="13"
+              viewBox="0 0 22 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.54395 1.76001H20.4585"
+                stroke="#224722"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M1.54395 6.85254H20.4585"
+                stroke="#224722"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M1.54395 11.9448H20.4585"
+                stroke="#224722"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <div class="intro__text__wrapper">
+              <h1 class="intro__title">Udržujte své rostliny naživu</h1>
+              <p class="intro__description">
+                Individuální plán péče a připomenutí pro vaše rostliny,
+                doporučení, průvodce krok za krokem, identifikace, expozimetr a
+                další. Udržujte své rostliny naživu s PlantCare!
+              </p>
+              <a href="admin.html" class="intro__button"> Správa květin </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats section">
+        <div class="container">
+          <div class="stats__inner">
+            <div class="stats__header">
+              <h2 class="stats__title">
+                Snadná správa květin pro každého zahradníka
+              </h2>
+              <p class="stats__description">
+                Objevte nástroje a tipy, jak udržet své květiny v plném květu po
+                celý rok. Spravujte svou zahradu jednoduše a přineste krásu do
+                svého života.
+              </p>
+            </div>
+            <div class="stats__list">
+              <div class="stats__item">
+                <div class="stats__icon">
+                  <img
+                    src="./images/icons/garden-icon.svg"
+                    alt="Ikona zahrady"
+                  />
+                </div>
+                <h3 class="stats__number">1 500+</h3>
+                <p class="stats__text">Vylepšených zahrad</p>
+              </div>
+              <div class="stats__item">
+                <div class="stats__icon">
+                  <img
+                    src="./images/icons/flower-icon.svg"
+                    alt="Ikona květin"
+                  />
+                </div>
+                <h3 class="stats__number">3 000+</h3>
+                <p class="stats__text">Spravovaných druhů květin</p>
+              </div>
+              <div class="stats__item">
+                <div class="stats__icon">
+                  <img
+                    src="./images/icons/badge-icon.svg"
+                    alt="Ikona zkušeností"
+                  />
+                </div>
+                <h3 class="stats__number">10 let</h3>
+                <p class="stats__text">Zkušeností v oblasti floristiky</p>
+              </div>
+              <div class="stats__item">
+                <div class="stats__icon">
+                  <img
+                    src="./images/icons/community-icon.svg"
+                    alt="Ikona globálního dosahu"
+                  />
+                </div>
+                <h3 class="stats__number">5 000+</h3>
+                <p class="stats__text">Spokojených zahradníků</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section">
+        <div class="container">
+          <div class="features__inner">
+            <div class="features__image">
+              <img src="./images/feature-img.avif" alt="Garden illustration" />
+            </div>
+            <div class="features__content">
+              <div class="features__item">
+                <div class="features__icon">
+                  <img
+                    src="./images/icons/flower-color-icon.svg"
+                    alt="Plant care icon"
+                  />
+                </div>
+                <p class="features__text">
+                  Plánování péče o rostliny – mějte své květiny vždy v perfektní
+                  kondici.
+                </p>
+              </div>
+              <div class="features__item">
+                <div class="features__icon">
+                  <img
+                    src="./images/icons/calendar-color-icon.svg"
+                    alt="Plant identification icon"
+                  />
+                </div>
+                <p class="features__text">
+                  Identifikace rostlin a doporučení pro nejlepší péči.
+                </p>
+              </div>
+              <div class="features__item">
+                <div class="features__icon">
+                  <img
+                    src="./images/icons/checklist-color-icon.svg"
+                    alt="Custom tips icon"
+                  />
+                </div>
+                <p class="features__text">
+                  Přizpůsobené tipy a rady na základě typu vaší zahrady.
+                </p>
+              </div>
+              <div class="features__item">
+                <div class="features__icon">
+                  <img
+                    src="./images/icons/search-color-icon.svg"
+                    alt="Database icon"
+                  />
+                </div>
+                <p class="features__text">
+                  Široká databáze květin a průvodce krok za krokem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section content-section--white section">
+        <div class="container">
+          <div class="content-section__inner">
+            <div class="content-section__content">
+              <h2 class="content-section__title">
+                Odhalte tajemství zahradničení
+              </h2>
+              <p class="content-section__text">
+                Proměňte svou zahradu v prosperující ráj s našimi snadno
+                použitelnými průvodci a inovativními technikami. Naučíme vás
+                krok za krokem, jak o své rostliny správně pečovat, a poskytneme
+                vám rady na základě zkušeností odborníků.
+              </p>
+            </div>
+            <div class="content-section__image">
+              <img src="./images/content-1.avif" alt="Image description" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section content-section--secondary section">
+        <div class="container">
+          <div class="content-section__inner">
+            <div class="content-section__content">
+              <h2 class="content-section__title">
+                Získejte více s personalizovanými tipy
+              </h2>
+              <p class="content-section__text">
+                Rady přizpůsobené vašim specifickým potřebám zahrady zajistí, že
+                vaše rostliny porostou zdravě a silně. Naše doporučení vám
+                umožní vyhnout se běžným chybám a ušetří vám čas při plánování
+                péče.
+              </p>
+            </div>
+            <div class="content-section__image">
+              <img src="./images/content-2.avif" alt="Image description" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <a href="index.html">PlantCare</a>
+          </div>
+
+          <div class="footer__columns">
+            <div class="footer__column">
+              <h4 class="footer__column__header">Navigace</h4>
+
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="admin.html" class="footer__menu-link">
+                    Správa květin
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="news.html" class="footer__menu-link"> Novinky </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="login.html" class="footer__menu-link">
+                    Přihlásit se
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h4 class="footer__column__header">Podmínky</h4>
+
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" target="__blank" class="footer__menu-link">
+                    FAQ
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Terms and conditions
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h4 class="footer__column__header">Sledujte nás</h4>
+
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Instagram </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Facebook </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer__copyright">© 2024 PlantCare</p>
+      </div>
+    </footer>
+  </body>
+</html>
