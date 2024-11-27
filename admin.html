@@ -41,11 +41,17 @@
 
           <nav class="sidebar__menu">
             <ul>
-              <li class="sidebar__item active">Přehled</li>
-              <li class="sidebar__item">Moje květiny</li>
-              <li class="sidebar__item">Přidat květinu</li>
-              <li class="sidebar__item">Nastavení</li>
-              <li class="sidebar__item">Odhlášení</li>
+              <li class="sidebar__item active" data-target="overview">
+                Přehled
+              </li>
+              <li class="sidebar__item" data-target="my-flowers">
+                Moje květiny
+              </li>
+              <li class="sidebar__item" data-target="add-flower">
+                Přidat květinu
+              </li>
+              <li class="sidebar__item" data-target="settings">Nastavení</li>
+              <li class="sidebar__item" data-target="logout">Odhlášení</li>
             </ul>
           </nav>
         </div>
@@ -193,130 +199,468 @@
         </header>
 
         <div class="main__inner">
-          <div class="task-cards">
-            <div class="task-card__wrapper">
-              <div class="task-card">
-                <div class="task-card__image">
-                  <img
-                    src="./images/flowers/image1.jpg"
-                    alt="Sluneční pohlažení"
-                  />
-                </div>
-                <div class="task-card__details">
-                  <h3 class="task-card__title">Sluneční pohlažení</h3>
-                  <p class="task-card__room">Obývací pokoj</p>
-                  <div class="task-card__tags">
-                    <span class="task-card__tag tag-water">Voda</span>
+          <div class="content active" id="overview">
+            <div class="task-cards">
+              <div class="task-card__wrapper">
+                <div class="task-card">
+                  <div class="task-card__image">
+                    <img
+                      src="./images/flowers/image1.jpg"
+                      alt="Sluneční pohlažení"
+                    />
                   </div>
+                  <div class="task-card__details">
+                    <h3 class="task-card__title">Sluneční pohlažení</h3>
+                    <p class="task-card__room">Obývací pokoj</p>
+                    <div class="task-card__tags">
+                      <span class="task-card__tag tag-water">Voda</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="task-card__top">
+                  <div class="task-card__date">dnes</div>
+                  <div class="task-card__task-count">1 úkol</div>
                 </div>
               </div>
 
-              <div class="task-card__top">
-                <div class="task-card__date">dnes</div>
-                <div class="task-card__task-count">1 úkol</div>
-              </div>
-            </div>
-
-            <div class="task-card__wrapper">
-              <div class="task-card">
-                <div class="task-card__image">
-                  <img src="./images/flowers/image2.jpeg" alt="Noční vánek" />
-                </div>
-                <div class="task-card__details">
-                  <h3 class="task-card__title">Noční vánek</h3>
-                  <p class="task-card__room">Kuchyně</p>
-                  <div class="task-card__tags">
-                    <span class="task-card__tag tag-water">Voda</span>
-                    <span class="task-card__tag tag-sun">Slunce</span>
+              <div class="task-card__wrapper">
+                <div class="task-card">
+                  <div class="task-card__image">
+                    <img src="./images/flowers/image2.jpeg" alt="Noční vánek" />
+                  </div>
+                  <div class="task-card__details">
+                    <h3 class="task-card__title">Noční vánek</h3>
+                    <p class="task-card__room">Kuchyně</p>
+                    <div class="task-card__tags">
+                      <span class="task-card__tag tag-water">Voda</span>
+                      <span class="task-card__tag tag-sun">Slunce</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="task-card__top">
-                <div class="task-card__date">dnes</div>
-                <div class="task-card__task-count">2 úkoly</div>
-              </div>
-            </div>
-            <div class="task-card__wrapper">
-              <div class="task-card">
-                <div class="task-card__image">
-                  <img src="./images/flowers/image3.jpeg" alt="Perla jara" />
+                <div class="task-card__top">
+                  <div class="task-card__date">dnes</div>
+                  <div class="task-card__task-count">2 úkoly</div>
                 </div>
-                <div class="task-card__details">
-                  <h3 class="task-card__title">Perla jara</h3>
-                  <p class="task-card__room">Ložnice</p>
-                  <div class="task-card__tags">
-                    <span class="task-card__tag tag-water">Voda</span>
-                    <span class="task-card__tag tag-minerals">Minerály</span>
+              </div>
+              <div class="task-card__wrapper">
+                <div class="task-card">
+                  <div class="task-card__image">
+                    <img src="./images/flowers/image3.jpeg" alt="Perla jara" />
+                  </div>
+                  <div class="task-card__details">
+                    <h3 class="task-card__title">Perla jara</h3>
+                    <p class="task-card__room">Ložnice</p>
+                    <div class="task-card__tags">
+                      <span class="task-card__tag tag-water">Voda</span>
+                      <span class="task-card__tag tag-minerals">Minerály</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="task-card__top">
-                <div class="task-card__date">zítra</div>
-                <div class="task-card__task-count">2 úkoly</div>
-              </div>
-            </div>
-            <div class="task-card__wrapper">
-              <div class="task-card">
-                <div class="task-card__image">
-                  <img src="./images/flowers/image4.jpg" alt="Zelená duha" />
+                <div class="task-card__top">
+                  <div class="task-card__date">zítra</div>
+                  <div class="task-card__task-count">2 úkoly</div>
                 </div>
-                <div class="task-card__details">
-                  <h3 class="task-card__title">Zelená duha</h3>
-                  <p class="task-card__room">Pracovna</p>
-                  <div class="task-card__tags">
-                    <span class="task-card__tag tag-water">Voda</span>
-                    <span class="task-card__tag tag-sun">Slunce</span>
-                    <span class="task-card__tag tag-fertilizer">Hnojivo</span>
+              </div>
+              <div class="task-card__wrapper">
+                <div class="task-card">
+                  <div class="task-card__image">
+                    <img src="./images/flowers/image4.jpg" alt="Zelená duha" />
+                  </div>
+                  <div class="task-card__details">
+                    <h3 class="task-card__title">Zelená duha</h3>
+                    <p class="task-card__room">Pracovna</p>
+                    <div class="task-card__tags">
+                      <span class="task-card__tag tag-water">Voda</span>
+                      <span class="task-card__tag tag-sun">Slunce</span>
+                      <span class="task-card__tag tag-fertilizer">Hnojivo</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="task-card__top">
-                <div class="task-card__date">za 3 dny</div>
-                <div class="task-card__task-count">3 úkoly</div>
-              </div>
-            </div>
-            <div class="task-card__wrapper">
-              <div class="task-card">
-                <div class="task-card__image">
-                  <img src="./images/flowers/image5.webp" alt="Hvězdné nebe" />
+                <div class="task-card__top">
+                  <div class="task-card__date">za 3 dny</div>
+                  <div class="task-card__task-count">3 úkoly</div>
                 </div>
-                <div class="task-card__details">
-                  <h3 class="task-card__title">Hvězdné nebe</h3>
-                  <p class="task-card__room">Terasa</p>
-                  <div class="task-card__tags">
-                    <span class="task-card__tag tag-water">Voda</span>
-                    <span class="task-card__tag tag-sun">Slunce</span>
-                    <span class="task-card__tag tag-fertilizer">Hnojivo</span>
-                    <span class="task-card__tag tag-minerals">Minerály</span>
+              </div>
+              <div class="task-card__wrapper">
+                <div class="task-card">
+                  <div class="task-card__image">
+                    <img
+                      src="./images/flowers/image5.webp"
+                      alt="Hvězdné nebe"
+                    />
+                  </div>
+                  <div class="task-card__details">
+                    <h3 class="task-card__title">Hvězdné nebe</h3>
+                    <p class="task-card__room">Terasa</p>
+                    <div class="task-card__tags">
+                      <span class="task-card__tag tag-water">Voda</span>
+                      <span class="task-card__tag tag-sun">Slunce</span>
+                      <span class="task-card__tag tag-fertilizer">Hnojivo</span>
+                      <span class="task-card__tag tag-minerals">Minerály</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="task-card__top">
-                <div class="task-card__date">za 4 dny</div>
-                <div class="task-card__task-count">4 úkoly</div>
-              </div>
-            </div>
-            <div class="task-card__wrapper">
-              <div class="task-card">
-                <div class="task-card__image">
-                  <img src="./images/flowers/image6.webp" alt="Kapka rosy" />
+                <div class="task-card__top">
+                  <div class="task-card__date">za 4 dny</div>
+                  <div class="task-card__task-count">4 úkoly</div>
                 </div>
-                <div class="task-card__details">
-                  <h3 class="task-card__title">Kapka rosy</h3>
-                  <p class="task-card__room">Dětský pokoj</p>
-                  <div class="task-card__tags">
-                    <span class="task-card__tag tag-water">Voda</span>
-                    <span class="task-card__tag tag-sun">Slunce</span>
-                    <span class="task-card__tag tag-minerals">Minerály</span>
+              </div>
+              <div class="task-card__wrapper">
+                <div class="task-card">
+                  <div class="task-card__image">
+                    <img src="./images/flowers/image6.webp" alt="Kapka rosy" />
+                  </div>
+                  <div class="task-card__details">
+                    <h3 class="task-card__title">Kapka rosy</h3>
+                    <p class="task-card__room">Dětský pokoj</p>
+                    <div class="task-card__tags">
+                      <span class="task-card__tag tag-water">Voda</span>
+                      <span class="task-card__tag tag-sun">Slunce</span>
+                      <span class="task-card__tag tag-minerals">Minerály</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="task-card__top">
-                <div class="task-card__date">za 6 dnů</div>
-                <div class="task-card__task-count">3 úkoly</div>
+                <div class="task-card__top">
+                  <div class="task-card__date">za 6 dnů</div>
+                  <div class="task-card__task-count">3 úkoly</div>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="content" id="add-flower">
+            <div class="add-flower">
+              <div class="add-flower-header">
+                <h1>Přidat rostlinu</h1>
+                <p>
+                  Vytvořte útulný domov pro své rostliny. Vyplňte informace o
+                  své nové rostlině!
+                </p>
+                <div class="form-group">
+                  <label for="plant-name">Název rostliny</label>
+                  <input
+                    type="text"
+                    id="plant-name"
+                    name="plant-name"
+                    placeholder="Začněte psát název..."
+                  />
+                  <ul id="suggestions" class="suggestions-list"></ul>
+                </div>
+              </div>
+
+              <div class="add-flower-sections">
+                <div class="section-container">
+                  <div class="form-group">
+                    <label for="plant-type">Typ rostliny</label>
+                    <select id="plant-type" name="plant-type" required>
+                      <option value="" disabled selected>Vyberte typ</option>
+                      <option value="indoor">Pokojová</option>
+                      <option value="outdoor">Venku</option>
+                      <option value="succulent">Sukulent</option>
+                      <option value="flowering">Kvetoucí</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="room">Vyberte pokoj</label>
+                    <select id="room" name="room" required>
+                      <option value="" disabled selected>Vyberte pokoj</option>
+                      <option value="living-room">Obývací pokoj</option>
+                      <option value="kitchen">Kuchyně</option>
+                      <option value="bedroom">Ložnice</option>
+                      <option value="bathroom">Koupelna</option>
+                      <option value="office">Kancelář</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="section-container">
+                  <h2>Podrobnosti péče</h2>
+                  <div class="form-group">
+                    <label>Požadavky</label>
+                    <div class="checkbox-group">
+                      <label
+                        ><input type="checkbox" name="needs" value="water" />
+                        Voda</label
+                      >
+                      <label
+                        ><input type="checkbox" name="needs" value="sunlight" />
+                        Slunce</label
+                      >
+                      <label
+                        ><input type="checkbox" name="needs" value="minerals" />
+                        Minerály</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="watering-frequency"
+                      >Frekvence zalévání (dny)</label
+                    >
+                    <input
+                      type="number"
+                      id="watering-frequency"
+                      name="watering-frequency"
+                      min="1"
+                      placeholder="Například 3"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="section-container">
+                  <h2>Fotografie rostliny</h2>
+                  <div class="form-group">
+                    <label for="plant-image">Nahrát fotografii</label>
+                    <input
+                      type="file"
+                      id="plant-image"
+                      name="plant-image"
+                      accept="image/*"
+                    />
+                    <div id="image-preview"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="notes">Přidejte poznámky o rostlině</label>
+                    <textarea
+                      id="notes"
+                      name="notes"
+                      placeholder="Například: Potřebuje hodně slunečního světla..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="recommendations">
+                  <h3>Doporučení péče</h3>
+                  <p id="watering">Zalévání: —</p>
+                  <p id="light">Osvětlení: —</p>
+                  <p id="fertilizer">Hnojení: —</p>
+                </div>
+              </div>
+
+              <div class="add-flower-actions">
+                <button type="submit" class="btn-submit">
+                  Přidat rostlinu
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="content" id="settings">
+            <div class="settings-section">
+              <div class="settings-header">
+                <h1 class="settings-title">Nastavení</h1>
+              </div>
+              <div class="settings-content">
+                <div class="settings-sidebar">
+                  <div class="settings-card">
+                    <div class="settings-card-header">
+                      <h5 class="settings-card-title">Nastavení profilu</h5>
+                    </div>
+                    <div class="settings-list-group" role="tablist">
+                      <a
+                        class="settings-list-item active"
+                        data-toggle="list"
+                        href="#account"
+                        role="tab"
+                        >Účet</a
+                      >
+                      <a
+                        class="settings-list-item"
+                        data-toggle="list"
+                        href="#password"
+                        role="tab"
+                        >Heslo</a
+                      >
+                      <a
+                        class="settings-list-item"
+                        data-toggle="list"
+                        href="#privacy"
+                        role="tab"
+                        >Soukromí a bezpečnost</a
+                      >
+                      <a
+                        class="settings-list-item"
+                        data-toggle="list"
+                        href="#email-notifications"
+                        role="tab"
+                        >E-mailová oznámení</a
+                      >
+                      <a
+                        class="settings-list-item"
+                        data-toggle="list"
+                        href="#web-notifications"
+                        role="tab"
+                        >Webová oznámení</a
+                      >
+                      <a
+                        class="settings-list-item"
+                        data-toggle="list"
+                        href="#widgets"
+                        role="tab"
+                        >Widgety</a
+                      >
+                      <a
+                        class="settings-list-item"
+                        data-toggle="list"
+                        href="#your-data"
+                        role="tab"
+                        >Vaše data</a
+                      >
+                      <a
+                        class="settings-list-item"
+                        data-toggle="list"
+                        href="#delete-account"
+                        role="tab"
+                        >Smazání účtu</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="settings-main">
+                  <div class="settings-tab-content">
+                    <!-- Account Section -->
+                    <div
+                      class="settings-tab-pane active"
+                      id="account"
+                      role="tabpanel"
+                    >
+                      <div class="settings-card">
+                        <div class="settings-card-header">
+                          <h5 class="settings-card-title">Veřejné informace</h5>
+                        </div>
+                        <div class="settings-card-body">
+                          <form>
+                            <div class="settings-row">
+                              <div class="settings-column">
+                                <div class="settings-form-group">
+                                  <label for="inputUsername"
+                                    >Uživatelské jméno</label
+                                  >
+                                  <input
+                                    type="text"
+                                    id="inputUsername"
+                                    class="settings-input"
+                                    placeholder="Uživatelské jméno"
+                                  />
+                                </div>
+                                <div class="settings-form-group">
+                                  <label for="inputBio">Biografie</label>
+                                  <textarea
+                                    id="inputBio"
+                                    class="settings-input"
+                                    rows="2"
+                                    placeholder="Řekněte něco o sobě"
+                                  ></textarea>
+                                </div>
+                              </div>
+                              <div class="settings-column">
+                                <div class="settings-avatar-wrapper">
+                                  <img
+                                    id="avatar-preview"
+                                    src="images/settings/avatar.jpeg"
+                                    alt="Profil"
+                                    class="settings-avatar"
+                                  />
+                                  <div class="settings-avatar-upload">
+                                    <label
+                                      for="avatar-upload"
+                                      class="settings-avatar-btn"
+                                      >Nahrát</label
+                                    >
+                                    <input
+                                      type="file"
+                                      id="avatar-upload"
+                                      accept="image/*"
+                                      style="display: none"
+                                    />
+                                  </div>
+                                  <small class="settings-avatar-hint">
+                                    Pro nejlepší výsledky použijte obrázek
+                                    alespoň 128x128 px ve formátu .jpg
+                                  </small>
+                                </div>
+                              </div>
+                            </div>
+                            <button type="submit" class="settings-btn">
+                              Uložit změny
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="settings-tab-pane fade"
+                      id="password"
+                      role="tabpanel"
+                    >
+                      <div class="settings-card">
+                        <div class="settings-card-header">
+                          <h5 class="settings-card-title">Heslo</h5>
+                        </div>
+                        <div class="settings-card-body">
+                          <form>
+                            <div class="settings-form-group">
+                              <label for="inputPasswordCurrent"
+                                >Aktuální heslo</label
+                              >
+                              <input
+                                type="password"
+                                id="inputPasswordCurrent"
+                                class="settings-input"
+                              />
+                              <small>
+                                <a href="#">Zapomněli jste heslo?</a>
+                              </small>
+                            </div>
+                            <div class="settings-form-group">
+                              <label for="inputPasswordNew">Nové heslo</label>
+                              <input
+                                type="password"
+                                id="inputPasswordNew"
+                                class="settings-input"
+                              />
+                            </div>
+                            <div class="settings-form-group">
+                              <label for="inputPasswordNew2"
+                                >Potvrzení hesla</label
+                              >
+                              <input
+                                type="password"
+                                id="inputPasswordNew2"
+                                class="settings-input"
+                              />
+                            </div>
+                            <button type="submit" class="settings-btn">
+                              Uložit změny
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="settings-tab-pane fade"
+                      id="privacy"
+                      role="tabpanel"
+                    >
+                      <div class="settings-card">
+                        <div class="settings-card-body">
+                          <h5 class="settings-card-title">
+                            Soukromí a bezpečnost
+                          </h5>
+                          <p>Nakonfigurujte nastavení soukromí zde.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="content" id=""></div> -->
         </div>
       </main>
     </div>

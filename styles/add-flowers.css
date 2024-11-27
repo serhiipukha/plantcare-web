@@ -1,0 +1,88 @@
+.add-flower {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.add-flower-header h1 {
+  font-size: 1.8rem;
+  color: #2d5a4c;
+  margin-bottom: 10px;
+}
+
+.add-flower-header p {
+  font-size: 0.9rem;
+  color: #7a869a;
+}
+
+.add-flower .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.add-flower select,
+.add-flower input[type="text"],
+.add-flower input[type="number"],
+.add-flower textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #f9fafb;
+  font-size: 0.9rem;
+}
+
+.add-flower textarea {
+  resize: none;
+  height: 100px;
+}
+
+.add-flower .btn-submit {
+  width: 40%;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #62b76a, #236742);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-flower .btn-submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.add-flower .btn-submit:active {
+  transform: scale(0.95);
+}
+
+.add-flower .section-container {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.add-flower .recommendations {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 15px;
+  display: none;
+}
+
+.add-flower .recommendations h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #2d5a4c;
+}
