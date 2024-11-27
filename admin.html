@@ -17,24 +17,72 @@
   <body>
     <div class="dashboard">
       <aside class="sidebar">
-        <div class="sidebar__logo">
-          <a href="index.html">PlantCare</a>
-        </div>
+        <div class="sidebar__inner">
+          <div class="sidebar__header">
+            <div class="sidebar__logo">
+              <a href="index.html">PlantCare</a>
+            </div>
 
-        <nav class="sidebar__menu">
-          <ul>
-            <li class="sidebar__item active">Přehled</li>
-            <li class="sidebar__item">Moje květiny</li>
-            <li class="sidebar__item">Přidat květinu</li>
-            <li class="sidebar__item">Nastavení</li>
-            <li class="sidebar__item">Odhlášení</li>
-          </ul>
-        </nav>
+            <button class="sidebar__header__close sidebar__mobile__trigger">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m47.334 5.367-4.7-4.7L24 19.3 5.367.667l-4.7 4.7L19.3 24 .667 42.633l4.7 4.7L24 28.7l18.634 18.633 4.7-4.7L28.7 24 47.334 5.367Z"
+                  fill="#224722"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <nav class="sidebar__menu">
+            <ul>
+              <li class="sidebar__item active">Přehled</li>
+              <li class="sidebar__item">Moje květiny</li>
+              <li class="sidebar__item">Přidat květinu</li>
+              <li class="sidebar__item">Nastavení</li>
+              <li class="sidebar__item">Odhlášení</li>
+            </ul>
+          </nav>
+        </div>
       </aside>
 
       <main class="dashboard__main">
         <header class="dashboard__header">
           <div class="dashboard__header-left">
+            <button class="dashboard__header__burger sidebar__mobile__trigger">
+              <svg
+                width="22"
+                height="13"
+                viewBox="0 0 22 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.54395 1.76001H20.4585"
+                  stroke="#224722"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                ></path>
+                <path
+                  d="M1.54395 6.85254H20.4585"
+                  stroke="#224722"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                ></path>
+                <path
+                  d="M1.54395 11.9448H20.4585"
+                  stroke="#224722"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </button>
+
             <div class="dashboard__search">
               <form class="dashboard__search__form" action="" method="get">
                 <button class="dashboard__search__button">
