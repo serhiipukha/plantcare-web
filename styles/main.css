@@ -4,6 +4,7 @@
 @import url("./intro.css");
 @import url("./stats.css");
 @import url("./feature.css");
+@import url("./content.css");
 
 :root {
   --ff-base: "Open Sans", sans-serif;
