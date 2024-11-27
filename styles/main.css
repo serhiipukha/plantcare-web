@@ -37,6 +37,16 @@ body {
   margin: 0 auto;
 }
 
+.main {
+  padding-top: 58px;
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding-top: 80px;
+  }
+}
+
 .logo {
   font-size: 1.5rem;
   color: var(--clr-primary);
