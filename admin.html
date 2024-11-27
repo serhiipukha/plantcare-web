@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlantCare</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="sidebar__logo">
+          <a href="index.html">PlantCare</a>
+        </div>
+
+        <nav class="sidebar__menu">
+          <ul>
+            <li class="sidebar__item active">Přehled</li>
+            <li class="sidebar__item">Moje květiny</li>
+            <li class="sidebar__item">Přidat květinu</li>
+            <li class="sidebar__item">Nastavení</li>
+            <li class="sidebar__item">Odhlášení</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="dashboard__main">
+        <header class="dashboard__header">
+          <div class="dashboard__header-left">
+            <div class="dashboard__search">
+              <form class="dashboard__search__form" action="" method="get">
+                <button class="dashboard__search__button">
+                  <span class="icon dashboard__search__icon">
+                    <svg
+                      width="24px"
+                      height="24px"
+                      version="1.1"
+                      viewBox="0 0 64 64"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        fill="none"
+                        fill-rule="evenodd"
+                        stroke="none"
+                        stroke-width="1"
+                      >
+                        <g
+                          fill="currentColor"
+                          transform="translate(5.000000, 5.000000)"
+                        >
+                          <path
+                            d="M23,0 C10.2974508,0 0,10.2974508 0,23 C0,35.7025492 10.2974508,46 23,46 C35.7025492,46 46,35.7025492 46,23 C46,10.2974508 35.7025492,0 23,0 Z M23,5 C32.9411255,5 41,13.0588745 41,23 C41,32.9411255 32.9411255,41 23,41 C13.0588745,41 5,32.9411255 5,23 C5,13.0588745 13.0588745,5 23,5 Z"
+                            fill-rule="nonzero"
+                          />
+                          <path
+                            d="M35.9289322,36.4289322 C36.9052429,35.4526215 38.4881554,35.4526215 39.4644661,36.4289322 L50.0710678,47.0355339 C51.0473785,48.0118446 51.0473785,49.5947571 50.0710678,50.5710678 C49.0947571,51.5473785 47.5118446,51.5473785 46.5355339,50.5710678 L35.9289322,39.9644661 C34.9526215,38.9881554 34.9526215,37.4052429 35.9289322,36.4289322 Z"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                </button>
+                <input
+                  class="dashboard__search__input"
+                  type="text"
+                  placeholder="Hledat..."
+                />
+              </form>
+            </div>
+          </div>
+          <div class="dashboard__header-right">
+            <button class="dashboard__notifications">
+              <span class="icon dashboard__notifications__icon">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="M29.78,24.37l-3.65-4.48L26,12a1,1,0,0,0,0-.16C24.85,5.58,21.21,2,16,2,10.5,2,6.08,6,5,11.82A1,1,0,0,0,5,12l-.13,8L2.14,24.48a1,1,0,0,0,0,1A1,1,0,0,0,3,26h9a4,4,0,0,0,8,0h9a1,1,0,0,0,.9-.57A1,1,0,0,0,29.78,24.37ZM16,28a2,2,0,0,1-2-2h4A2,2,0,0,1,16,28ZM4.77,24l2-3.24a1,1,0,0,0,.14-.5L7,12.1C7.91,7.25,11.52,4,16,4c5.63,0,7.43,5,8,8.1l.14,8.16a1,1,0,0,0,.22.62L26.9,24Z"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </button>
+
+            <button class="dashboard__user">
+              <div class="dashboard__user__inner">
+                <span class="icon dashboard__user__icon">
+                  <svg
+                    enable-background="new 0 0 32 32"
+                    height="32px"
+                    version="1.1"
+                    viewBox="0 0 32 32"
+                    width="32px"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g>
+                      <polyline
+                        fill="none"
+                        points="649,137.999 675,137.999 675,155.999 661,155.999"
+                        stroke="#FFFFFF"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        stroke-width="2"
+                      />
+                      <polyline
+                        fill="none"
+                        points="653,155.999 649,155.999 649,141.999"
+                        stroke="#FFFFFF"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        stroke-width="2"
+                      />
+                      <polyline
+                        fill="none"
+                        points="661,156 653,162 653,156"
+                        stroke="#FFFFFF"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <path
+                      d="M21.947,16.332C23.219,14.915,24,13.049,24,11c0-4.411-3.589-8-8-8s-8,3.589-8,8s3.589,8,8,8  c1.555,0,3.003-0.453,4.233-1.224c4.35,1.639,7.345,5.62,7.726,10.224H4.042c0.259-3.099,1.713-5.989,4.078-8.051  c0.417-0.363,0.46-0.994,0.097-1.411c-0.362-0.416-0.994-0.46-1.411-0.097C3.751,21.103,2,24.951,2,29c0,0.553,0.448,1,1,1h26  c0.553,0,1-0.447,1-1C30,23.514,26.82,18.615,21.947,16.332z M10,11c0-3.309,2.691-6,6-6s6,2.691,6,6s-2.691,6-6,6S10,14.309,10,11z  "
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="dashboard__user__name">Účet</div>
+            </button>
+          </div>
+        </header>
+
+        <div class="main__inner">
+          <div class="task-cards">
+            <div class="task-card__wrapper">
+              <div class="task-card">
+                <div class="task-card__image">
+                  <img
+                    src="./images/flowers/image1.jpg"
+                    alt="Sluneční pohlažení"
+                  />
+                </div>
+                <div class="task-card__details">
+                  <h3 class="task-card__title">Sluneční pohlažení</h3>
+                  <p class="task-card__room">Obývací pokoj</p>
+                  <div class="task-card__tags">
+                    <span class="task-card__tag tag-water">Voda</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="task-card__top">
+                <div class="task-card__date">dnes</div>
+                <div class="task-card__task-count">1 úkol</div>
+              </div>
+            </div>
+
+            <div class="task-card__wrapper">
+              <div class="task-card">
+                <div class="task-card__image">
+                  <img src="./images/flowers/image2.jpeg" alt="Noční vánek" />
+                </div>
+                <div class="task-card__details">
+                  <h3 class="task-card__title">Noční vánek</h3>
+                  <p class="task-card__room">Kuchyně</p>
+                  <div class="task-card__tags">
+                    <span class="task-card__tag tag-water">Voda</span>
+                    <span class="task-card__tag tag-sun">Slunce</span>
+                  </div>
+                </div>
+              </div>
+              <div class="task-card__top">
+                <div class="task-card__date">dnes</div>
+                <div class="task-card__task-count">2 úkoly</div>
+              </div>
+            </div>
+            <div class="task-card__wrapper">
+              <div class="task-card">
+                <div class="task-card__image">
+                  <img src="./images/flowers/image3.jpeg" alt="Perla jara" />
+                </div>
+                <div class="task-card__details">
+                  <h3 class="task-card__title">Perla jara</h3>
+                  <p class="task-card__room">Ložnice</p>
+                  <div class="task-card__tags">
+                    <span class="task-card__tag tag-water">Voda</span>
+                    <span class="task-card__tag tag-minerals">Minerály</span>
+                  </div>
+                </div>
+              </div>
+              <div class="task-card__top">
+                <div class="task-card__date">zítra</div>
+                <div class="task-card__task-count">2 úkoly</div>
+              </div>
+            </div>
+            <div class="task-card__wrapper">
+              <div class="task-card">
+                <div class="task-card__image">
+                  <img src="./images/flowers/image4.jpg" alt="Zelená duha" />
+                </div>
+                <div class="task-card__details">
+                  <h3 class="task-card__title">Zelená duha</h3>
+                  <p class="task-card__room">Pracovna</p>
+                  <div class="task-card__tags">
+                    <span class="task-card__tag tag-water">Voda</span>
+                    <span class="task-card__tag tag-sun">Slunce</span>
+                    <span class="task-card__tag tag-fertilizer">Hnojivo</span>
+                  </div>
+                </div>
+              </div>
+              <div class="task-card__top">
+                <div class="task-card__date">za 3 dny</div>
+                <div class="task-card__task-count">3 úkoly</div>
+              </div>
+            </div>
+            <div class="task-card__wrapper">
+              <div class="task-card">
+                <div class="task-card__image">
+                  <img src="./images/flowers/image5.webp" alt="Hvězdné nebe" />
+                </div>
+                <div class="task-card__details">
+                  <h3 class="task-card__title">Hvězdné nebe</h3>
+                  <p class="task-card__room">Terasa</p>
+                  <div class="task-card__tags">
+                    <span class="task-card__tag tag-water">Voda</span>
+                    <span class="task-card__tag tag-sun">Slunce</span>
+                    <span class="task-card__tag tag-fertilizer">Hnojivo</span>
+                    <span class="task-card__tag tag-minerals">Minerály</span>
+                  </div>
+                </div>
+              </div>
+              <div class="task-card__top">
+                <div class="task-card__date">za 4 dny</div>
+                <div class="task-card__task-count">4 úkoly</div>
+              </div>
+            </div>
+            <div class="task-card__wrapper">
+              <div class="task-card">
+                <div class="task-card__image">
+                  <img src="./images/flowers/image6.webp" alt="Kapka rosy" />
+                </div>
+                <div class="task-card__details">
+                  <h3 class="task-card__title">Kapka rosy</h3>
+                  <p class="task-card__room">Dětský pokoj</p>
+                  <div class="task-card__tags">
+                    <span class="task-card__tag tag-water">Voda</span>
+                    <span class="task-card__tag tag-sun">Slunce</span>
+                    <span class="task-card__tag tag-minerals">Minerály</span>
+                  </div>
+                </div>
+              </div>
+              <div class="task-card__top">
+                <div class="task-card__date">za 6 dnů</div>
+                <div class="task-card__task-count">3 úkoly</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <a href="index.html">PlantCare</a>
+          </div>
+
+          <div class="footer__columns">
+            <div class="footer__column">
+              <h4 class="footer__column__header">Navigace</h4>
+
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="admin.html" class="footer__menu-link">
+                    Správa květin
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="news.html" class="footer__menu-link"> Novinky </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="login.html" class="footer__menu-link">
+                    Přihlásit se
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h4 class="footer__column__header">Podmínky</h4>
+
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" target="__blank" class="footer__menu-link">
+                    FAQ
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Terms and conditions
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h4 class="footer__column__header">Sledujte nás</h4>
+
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Instagram </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Facebook </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer__copyright">© 2024 PlantCare</p>
+      </div>
+    </footer>
+  </body>
+</html>

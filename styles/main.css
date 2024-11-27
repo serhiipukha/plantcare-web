@@ -7,6 +7,7 @@
 @import url("./content.css");
 @import url("./news.css");
 @import url("./login.css");
+@import url("./dashboard.css");
 
 :root {
   --ff-base: "Open Sans", sans-serif;
