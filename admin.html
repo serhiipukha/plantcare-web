@@ -41,17 +41,24 @@
 
           <nav class="sidebar__menu">
             <ul>
-              <li class="sidebar__item active" data-target="overview">
+              <li
+                class="sidebar-triger sidebar__item active"
+                data-target="overview"
+              >
                 Přehled
               </li>
-              <li class="sidebar__item" data-target="my-flowers">
+              <li class="sidebar-triger sidebar__item" data-target="my-flowers">
                 Moje květiny
               </li>
-              <li class="sidebar__item" data-target="add-flower">
+              <li class="sidebar-triger sidebar__item" data-target="add-flower">
                 Přidat květinu
               </li>
-              <li class="sidebar__item" data-target="settings">Nastavení</li>
-              <li class="sidebar__item" data-target="logout">Odhlášení</li>
+              <li class="sidebar-triger sidebar__item" data-target="settings">
+                Nastavení
+              </li>
+              <li class="sidebar__item">
+                <a href="index.html"> Odhlášení </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -573,25 +580,35 @@
           <div class="content" id="add-flower">
             <div class="add-flower">
               <div class="add-flower-header">
-                <h1>Přidat rostlinu</h1>
-                <p>
+                <h1 class="add-flower__title">Přidat rostlinu</h1>
+                <p class="add-flower__description">
                   Vytvořte útulný domov pro své rostliny. Vyplňte informace o
                   své nové rostlině!
                 </p>
-                <div class="form-group">
-                  <label for="plant-name">Název rostliny</label>
-                  <input
-                    type="text"
-                    id="plant-name"
-                    name="plant-name"
-                    placeholder="Začněte psát název..."
-                  />
-                  <ul id="suggestions" class="suggestions-list"></ul>
-                </div>
               </div>
 
               <div class="add-flower-sections">
                 <div class="section-container">
+                  <div class="form-group">
+                    <label for="plant-name1">Název rostliny</label>
+                    <input
+                      type="text"
+                      name="plant-name1"
+                      placeholder="Začněte psát název..."
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="plant-name">Kategorie rostliny</label>
+                    <input
+                      type="text"
+                      id="plant-name"
+                      name="plant-name"
+                      placeholder="Začněte psát název..."
+                    />
+                    <ul id="suggestions" class="suggestions-list"></ul>
+                  </div>
+
                   <div class="form-group">
                     <label for="plant-type">Typ rostliny</label>
                     <select id="plant-type" name="plant-type" required>
@@ -616,28 +633,30 @@
                 </div>
 
                 <div class="section-container">
-                  <h2>Podrobnosti péče</h2>
+                  <h2 class="add-flower__section__title">Podrobnosti péče</h2>
+
                   <div class="form-group">
                     <label>Požadavky</label>
                     <div class="checkbox-group">
-                      <label
-                        ><input type="checkbox" name="needs" value="water" />
-                        Voda</label
-                      >
-                      <label
-                        ><input type="checkbox" name="needs" value="sunlight" />
-                        Slunce</label
-                      >
-                      <label
-                        ><input type="checkbox" name="needs" value="minerals" />
-                        Minerály</label
-                      >
+                      <label>
+                        <input type="checkbox" name="needs" value="water" />
+                        Voda
+                      </label>
+                      <label>
+                        <input type="checkbox" name="needs" value="sunlight" />
+                        Slunce
+                      </label>
+                      <label>
+                        <input type="checkbox" name="needs" value="minerals" />
+                        Minerály
+                      </label>
                     </div>
                   </div>
+
                   <div class="form-group">
-                    <label for="watering-frequency"
-                      >Frekvence zalévání (dny)</label
-                    >
+                    <label for="watering-frequency">
+                      Frekvence zalévání (dny)
+                    </label>
                     <input
                       type="number"
                       id="watering-frequency"
@@ -650,7 +669,10 @@
                 </div>
 
                 <div class="section-container">
-                  <h2>Fotografie rostliny</h2>
+                  <h2 class="add-flower__section__title">
+                    Fotografie rostliny
+                  </h2>
+
                   <div class="form-group">
                     <label for="plant-image">Nahrát fotografii</label>
                     <input
@@ -679,8 +701,8 @@
                 </div>
               </div>
 
-              <div class="add-flower-actions">
-                <button type="submit" class="btn-submit">
+              <div class="add-flower__submit__wrapper">
+                <button class="add-flower__submit" type="submit">
                   Přidat rostlinu
                 </button>
               </div>

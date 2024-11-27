@@ -19,7 +19,7 @@ mobileSidebarTrigger.forEach((button) => {
 });
 
 /* Tabs */
-const sidebarItems = document.querySelectorAll(".sidebar__item");
+const sidebarItems = document.querySelectorAll(".sidebar-triger");
 const contentSections = document.querySelectorAll(".main__inner .content");
 
 sidebarItems.forEach((item) => {
