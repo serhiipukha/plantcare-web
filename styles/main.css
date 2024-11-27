@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("./header.css");
 @import url("./footer.css");
+@import url("./intro.css");
 
 :root {
   --ff-base: "Open Sans", sans-serif;
@@ -36,64 +37,4 @@ body {
   font-size: 1.5rem;
   color: var(--clr-primary);
   font-weight: bold;
-}
-
-/* Intro */
-.intro {
-  position: relative;
-  padding-top: 80px;
-  height: 100vh;
-  max-height: 750px;
-  background-color: var(--clr-secondary);
-  background-image: url("../images/intro-bg.jpg");
-  background: linear-gradient(#e7eddea0, #e7eddea0),
-    url("../images/intro-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.intro__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  max-height: 650px;
-}
-
-.intro__text__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--clr-primary);
-  text-align: center;
-  max-width: 800px;
-}
-
-.intro__title {
-  font-family: var(--ff-alt);
-  font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 32px;
-}
-
-.intro__description {
-  font-size: 20px;
-  line-height: 1.4;
-}
-
-.intro__button {
-  display: block;
-  background: var(--clr-primary);
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--clr-primary-lt);
-  border-radius: 5rem;
-  padding: 1rem 2rem;
-  margin-top: 32px;
-  transition: background 0.3s;
-}
-
-.intro__button:hover {
-  background: var(--clr-primary-dk);
 }
