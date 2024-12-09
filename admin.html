@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/admin.js" defer></script>
   </head>
   <body>
     <div class="dashboard">
@@ -23,7 +24,11 @@
               <a href="index.html">PlantCare</a>
             </div>
 
-            <button class="sidebar__header__close sidebar__mobile__trigger">
+            <button
+              class="sidebar__header__close sidebar__mobile__trigger"
+              type="button"
+              aria-label="Zavřít mobilní menu"
+            >
               <svg
                 width="20px"
                 height="20px"
@@ -67,7 +72,11 @@
       <main class="dashboard__main">
         <header class="dashboard__header">
           <div class="dashboard__header-left">
-            <button class="dashboard__header__burger sidebar__mobile__trigger">
+            <button
+              class="dashboard__header__burger sidebar__mobile__trigger"
+              type="button"
+              aria-label="Otevřít mobilní menu"
+            >
               <svg
                 width="22"
                 height="13"
@@ -98,7 +107,11 @@
 
             <div class="dashboard__search">
               <form class="dashboard__search__form" action="" method="get">
-                <button class="dashboard__search__button">
+                <button
+                  class="dashboard__search__button"
+                  type="submit"
+                  aria-label="Hledat"
+                >
                   <span class="icon dashboard__search__icon">
                     <svg
                       width="24px"
@@ -130,16 +143,28 @@
                     </svg>
                   </span>
                 </button>
+                <label
+                  for="dashboard-search"
+                  class="dashboard__visually-hidden"
+                >
+                  Hledat
+                </label>
                 <input
+                  id="dashboard-search"
                   class="dashboard__search__input"
-                  type="text"
+                  type="search"
+                  autocomplete="off"
                   placeholder="Hledat..."
                 />
               </form>
             </div>
           </div>
           <div class="dashboard__header-right">
-            <button class="dashboard__notifications">
+            <button
+              class="dashboard__notifications"
+              type="button"
+              aria-label="Zobrazit oznámení"
+            >
               <span class="icon dashboard__notifications__icon">
                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <g>
@@ -592,6 +617,7 @@
                   <div class="form-group">
                     <label for="plant-name1">Název rostliny</label>
                     <input
+                      id="plant-name1"
                       type="text"
                       name="plant-name1"
                       placeholder="Začněte psát název..."
@@ -636,8 +662,8 @@
                   <h2 class="add-flower__section__title">Podrobnosti péče</h2>
 
                   <div class="form-group">
-                    <label>Požadavky</label>
-                    <div class="checkbox-group">
+                    <fieldset class="checkbox-group">
+                      <legend>Požadavky</legend>
                       <label>
                         <input type="checkbox" name="needs" value="water" />
                         Voda
@@ -650,7 +676,7 @@
                         <input type="checkbox" name="needs" value="minerals" />
                         Minerály
                       </label>
-                    </div>
+                    </fieldset>
                   </div>
 
                   <div class="form-group">
@@ -763,10 +789,10 @@
                                   />
                                 </div>
                                 <div class="settings-form-group">
-                                  <label for="inputUsername">E-mail</label>
+                                  <label for="inputEmail">E-mail</label>
                                   <input
                                     type="text"
-                                    id="inputUsername"
+                                    id="inputEmail"
                                     class="settings-input"
                                     placeholder="E-mail"
                                   />
@@ -858,8 +884,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="content" id=""></div> -->
         </div>
       </main>
     </div>
@@ -873,7 +897,7 @@
 
           <div class="footer__columns">
             <div class="footer__column">
-              <h4 class="footer__column__header">Navigace</h4>
+              <h3 class="footer__column__header">Navigace</h3>
 
               <ul class="footer__menu">
                 <li class="footer__menu-item">
@@ -893,7 +917,7 @@
             </div>
 
             <div class="footer__column">
-              <h4 class="footer__column__header">Podmínky</h4>
+              <h3 class="footer__column__header">Podmínky</h3>
 
               <ul class="footer__menu">
                 <li class="footer__menu-item">
@@ -913,7 +937,7 @@
             </div>
 
             <div class="footer__column">
-              <h4 class="footer__column__header">Sledujte nás</h4>
+              <h3 class="footer__column__header">Sledujte nás</h3>
 
               <ul class="footer__menu">
                 <li class="footer__menu-item">
