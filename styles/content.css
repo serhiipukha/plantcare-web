@@ -47,7 +47,7 @@
     align-items: center;
   }
 
-  .content-section:nth-child(even) .content-section__inner {
+  .content-section:nth-child(odd) .content-section__inner {
     flex-direction: row-reverse;
   }
 
