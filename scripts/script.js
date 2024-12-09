@@ -1,3 +1,4 @@
+/* Menu */
 const menu = document.querySelector(".nav");
 const mobileMenuTrigger = document.querySelectorAll(".mobile__menu__trigger");
 
@@ -24,26 +25,21 @@ const contentSections = document.querySelectorAll(".main__inner .content");
 
 sidebarItems.forEach((item) => {
   item.addEventListener("click", () => {
-    // Remove active class from all sidebar items
     sidebarItems.forEach((el) => el.classList.remove("active"));
-    // Add active class to the clicked sidebar item
     item.classList.add("active");
 
-    // Get the target content's ID
     const targetId = item.dataset.target;
-
-    // Hide all content sections
     contentSections.forEach((section) => section.classList.remove("active"));
-    // Show the targeted content section
+
     document.getElementById(targetId).classList.add("active");
   });
 });
 
 /* Settings */
 // Scoped avatar upload event
-document
-  .querySelector(".settings-section #avatar-upload")
-  .addEventListener("change", function (event) {
+const avatar = document.querySelector(".settings-section #avatar-upload");
+if (avatar) {
+  avatar.addEventListener("change", function (event) {
     const file = event.target.files[0];
     if (file) {
       const reader = new FileReader();
@@ -54,11 +50,12 @@ document
       reader.readAsDataURL(file);
     }
   });
+}
 
 // Scoped plant image upload event
-document
-  .querySelector(".add-flower #plant-image")
-  .addEventListener("change", function (event) {
+const flower = document.querySelector(".add-flower #plant-image");
+if (flower) {
+  flower.addEventListener("change", function (event) {
     const preview = document.querySelector(".add-flower #image-preview");
     const file = event.target.files[0];
 
@@ -73,6 +70,7 @@ document
       preview.style.display = "none";
     }
   });
+}
 
 // Scoped plant name input suggestions
 const plantNames = [
@@ -98,27 +96,31 @@ function filterPlantNames(query) {
   );
 }
 
-plantNameInput.addEventListener("input", (event) => {
-  const query = event.target.value;
-  const suggestions = filterPlantNames(query);
+if (plantNameInput) {
+  plantNameInput.addEventListener("input", (event) => {
+    const query = event.target.value;
+    const suggestions = filterPlantNames(query);
 
-  if (suggestions.length > 0) {
-    suggestionsList.innerHTML = suggestions
-      .map((name) => `<li>${name}</li>`)
-      .join("");
-    suggestionsList.style.display = "block";
-  } else {
-    suggestionsList.style.display = "none";
-  }
-});
+    if (suggestions.length > 0) {
+      suggestionsList.innerHTML = suggestions
+        .map((name) => `<li>${name}</li>`)
+        .join("");
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+}
 
-suggestionsList.addEventListener("click", (event) => {
-  if (event.target.tagName === "LI") {
-    plantNameInput.value = event.target.textContent;
-    suggestionsList.style.display = "none";
-    updateRecommendations(event.target.textContent);
-  }
-});
+if (suggestionsList) {
+  suggestionsList.addEventListener("click", (event) => {
+    if (event.target.tagName === "LI") {
+      plantNameInput.value = event.target.textContent;
+      suggestionsList.style.display = "none";
+      updateRecommendations(event.target.textContent);
+    }
+  });
+}
 
 document.addEventListener("click", (event) => {
   if (!event.target.closest(".add-flower .form-group")) {
@@ -133,7 +135,6 @@ const plantRecommendations = {
     light: "Jasné rozptýlené světlo",
     fertilizer: "Hnojit jednou měsíčně",
   },
-  // Add other plants...
 };
 
 const recommendationsDiv = document.querySelector(
@@ -156,9 +157,10 @@ function updateRecommendations(plant) {
 }
 
 // Scoped form submission
-document
-  .querySelector(".add-flower .btn-submit")
-  .addEventListener("click", (event) => {
+const submitFlower = document.querySelector(".add-flower .btn-submit");
+
+if (submitFlower) {
+  submitFlower.addEventListener("click", (event) => {
     event.preventDefault();
 
     const plantName = document
@@ -191,3 +193,4 @@ document
     document.querySelector(".add-flower form").reset();
     document.querySelector(".add-flower #image-preview").style.display = "none";
   });
+}
