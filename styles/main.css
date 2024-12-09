@@ -123,7 +123,7 @@ h6 {
 
 .flower__location {
   font-size: 14px;
-  color: #777;
+  color: #555;
   margin: 5px 0;
 }
 
@@ -135,7 +135,7 @@ h6 {
 
 .flower__button {
   font-size: 14px;
-  width: 85px;
+  width: 90px;
   background: var(--clr-primary);
   color: var(--clr-ntrl-min);
   display: block;
@@ -145,17 +145,17 @@ h6 {
 }
 
 .flower__button--edit {
-  background: #ffb74d;
+  background: #29652c;
 }
 
 .flower__button--edit:hover {
-  background: #ffa726;
+  background: #29652c;
 }
 
 .flower__button--remove {
-  background: #ef5350;
+  background: #ac1b1b;
 }
 
 .flower__button--remove:hover {
-  background: #e53935;
+  background: #ac1b1b;
 }
